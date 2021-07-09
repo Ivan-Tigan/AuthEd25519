@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <PackageId>AuthEd25519</PackageId>
+        <Version>1.0.10</Version>
+        <Authors>Ivan Tsoninski</Authors>
+        <Company>Higher Order Games</Company>
+        <Description> Ultra-simple high-level library for using Ed25519 to manage accounts. </Description>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{E0242057-C450-46A8-AE0C-48EB509E1770}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <RootNamespace>AuthEd25519</RootNamespace>
+        <AssemblyName>AuthEd25519</AssemblyName>
+        <TargetFrameworks>net472;net5.0;netstandard2.0</TargetFrameworks>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="fable\Library.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Chaos.NaCl.Standard" Version="1.0.0" />
+      <PackageReference Include="Konscious.Security.Cryptography.Argon2" Version="1.2.1" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+      <PackageReference Include="zxcvbn-core" Version="7.0.92" />
+    </ItemGroup>
+
+</Project>

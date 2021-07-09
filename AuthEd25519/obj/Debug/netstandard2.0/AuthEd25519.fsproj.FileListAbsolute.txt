@@ -1,0 +1,8 @@
+/home/vankata/RiderProjects/AuthEd25519/AuthEd25519/bin/Debug/netstandard2.0/AuthEd25519.deps.json
+/home/vankata/RiderProjects/AuthEd25519/AuthEd25519/bin/Debug/netstandard2.0/AuthEd25519.dll
+/home/vankata/RiderProjects/AuthEd25519/AuthEd25519/bin/Debug/netstandard2.0/AuthEd25519.pdb
+/home/vankata/RiderProjects/AuthEd25519/AuthEd25519/obj/Debug/netstandard2.0/AuthEd25519.fsprojAssemblyReference.cache
+/home/vankata/RiderProjects/AuthEd25519/AuthEd25519/obj/Debug/netstandard2.0/AuthEd25519.AssemblyInfoInputs.cache
+/home/vankata/RiderProjects/AuthEd25519/AuthEd25519/obj/Debug/netstandard2.0/AuthEd25519.AssemblyInfo.fs
+/home/vankata/RiderProjects/AuthEd25519/AuthEd25519/obj/Debug/netstandard2.0/AuthEd25519.dll
+/home/vankata/RiderProjects/AuthEd25519/AuthEd25519/obj/Debug/netstandard2.0/AuthEd25519.pdb
