@@ -7,7 +7,7 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "AuthEd25519/1.0.10": {
+      "AuthEd25519/1.1.0": {
         "dependencies": {
           "Chaos.NaCl.Standard": "1.0.0",
           "FSharp.Core": "5.0.0",
@@ -430,7 +430,7 @@
     }
   },
   "libraries": {
-    "AuthEd25519/1.0.10": {
+    "AuthEd25519/1.1.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

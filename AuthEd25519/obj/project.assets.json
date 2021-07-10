@@ -6143,7 +6143,7 @@
     "/home/vankata/.nuget/packages/": {}
   },
   "project": {
-    "version": "1.0.10",
+    "version": "1.1.0",
     "restore": {
       "projectUniqueName": "/home/vankata/RiderProjects/AuthEd25519/AuthEd25519/AuthEd25519.fsproj",
       "projectName": "AuthEd25519",

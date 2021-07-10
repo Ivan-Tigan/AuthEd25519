@@ -85,16 +85,15 @@ let max_strength = 1200L
 let rstrength (pass:string) =substrings pass |> List.sumBy strength |> ((*)2L) |> fun x -> if x > max_strength then max_strength else x
 let rweakness pass = max_strength - rstrength pass
 
-
 let shasherino known_secret (extra:string) (salt:string) (pass:string) =
     let weakness = rweakness pass
     let known_secret = Convert.FromBase64String known_secret
     let salt = Encoding.UTF8.GetBytes salt
     let extra = Encoding.UTF8.GetBytes extra
     let pass = Encoding.UTF8.GetBytes pass
-    let harden min = fun x -> let m = (x*weakness)/max_strength in if m < min then (*let _ = printfn "here %A" (x, weakness,x*weakness, max_strength, m, min) in*) min else m
-    let its = int32 <| harden 3L def_iterations
-    let m = int32 <| harden 100_000L def_memory_size
+    let harden min = fun x -> let m = (x*weakness)/max_strength in max m min
+    let its = int32 <| harden 1L def_iterations
+    let m = int32 <| harden 100_000L def_memory_size + weakness
     let d = int32 <| def_degree_of_parallelism
     argon2hash its m d 32 known_secret salt extra pass
 let load_acc_from_details known_secret extra salt pass = shasherino known_secret extra salt pass |> bseed |> fun s -> s, bload_account_seed s

@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <PackageId>AuthEd25519</PackageId>
-        <Version>1.0.10</Version>
+        <Version>1.1.0</Version>
         <Authors>Ivan Tsoninski</Authors>
         <Company>Higher Order Games</Company>
         <Description> Ultra-simple high-level library for using Ed25519 to manage accounts. </Description>
