@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/vankata/RiderProjects/AuthEd25519/AuthEd25519/AuthEd25519.fsproj": {}
+    "/home/vankata/Documents/hog/AuthEd25519/AuthEd25519/AuthEd25519.fsproj": {}
   },
   "projects": {
-    "/home/vankata/RiderProjects/AuthEd25519/AuthEd25519/AuthEd25519.fsproj": {
+    "/home/vankata/Documents/hog/AuthEd25519/AuthEd25519/AuthEd25519.fsproj": {
       "version": "1.1.0",
       "restore": {
-        "projectUniqueName": "/home/vankata/RiderProjects/AuthEd25519/AuthEd25519/AuthEd25519.fsproj",
+        "projectUniqueName": "/home/vankata/Documents/hog/AuthEd25519/AuthEd25519/AuthEd25519.fsproj",
         "projectName": "AuthEd25519",
-        "projectPath": "/home/vankata/RiderProjects/AuthEd25519/AuthEd25519/AuthEd25519.fsproj",
+        "projectPath": "/home/vankata/Documents/hog/AuthEd25519/AuthEd25519/AuthEd25519.fsproj",
         "packagesPath": "/home/vankata/.nuget/packages/",
-        "outputPath": "/home/vankata/RiderProjects/AuthEd25519/AuthEd25519/obj/",
+        "outputPath": "/home/vankata/Documents/hog/AuthEd25519/AuthEd25519/obj/",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
@@ -20,12 +20,17 @@
         "originalTargetFrameworks": [
           "net472",
           "net5.0",
+          "netcoreapp3.1",
           "netstandard2.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          },
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {}
@@ -41,22 +46,52 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Chaos.NaCl.Standard": {
-              "target": "Package",
-              "version": "[1.0.0, )",
-              "generatePathProperty": true
-            },
             "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
               "target": "Package",
               "version": "[5.0.0, )",
+              "generatePathProperty": true
+            },
+            "HOG.TezFs": {
+              "target": "Package",
+              "version": "[1.0.2, )",
               "generatePathProperty": true
             },
             "Konscious.Security.Cryptography.Argon2": {
               "target": "Package",
               "version": "[1.2.1, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )",
+              "autoReferenced": true
+            },
+            "ModifiedNetezos": {
+              "target": "Package",
+              "version": "[1.0.0, )",
               "generatePathProperty": true
             },
             "Newtonsoft.Json": {
@@ -85,19 +120,20 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
         },
-        "net472": {
-          "targetAlias": "net472",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
-            "Chaos.NaCl.Standard": {
-              "target": "Package",
-              "version": "[1.0.0, )",
-              "generatePathProperty": true
-            },
             "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
               "target": "Package",
               "version": "[5.0.0, )",
+              "generatePathProperty": true
+            },
+            "HOG.TezFs": {
+              "target": "Package",
+              "version": "[1.0.2, )",
               "generatePathProperty": true
             },
             "Konscious.Security.Cryptography.Argon2": {
@@ -109,7 +145,29 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[1.0.0, )",
-              "autoReferenced": true,
+              "autoReferenced": true
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )",
+              "autoReferenced": true
+            },
+            "ModifiedNetezos": {
+              "target": "Package",
+              "version": "[1.0.0, )",
               "generatePathProperty": true
             },
             "Newtonsoft.Json": {
@@ -123,24 +181,112 @@
               "generatePathProperty": true
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
         },
-        "netstandard2.0": {
-          "targetAlias": "netstandard2.0",
+        "net472": {
+          "targetAlias": "net472",
           "dependencies": {
-            "Chaos.NaCl.Standard": {
-              "target": "Package",
-              "version": "[1.0.0, )",
-              "generatePathProperty": true
-            },
             "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
               "target": "Package",
               "version": "[5.0.0, )",
+              "generatePathProperty": true
+            },
+            "HOG.TezFs": {
+              "target": "Package",
+              "version": "[1.0.2, )",
               "generatePathProperty": true
             },
             "Konscious.Security.Cryptography.Argon2": {
               "target": "Package",
               "version": "[1.2.1, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )",
+              "autoReferenced": true
+            },
+            "ModifiedNetezos": {
+              "target": "Package",
+              "version": "[1.0.0, )",
+              "generatePathProperty": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )",
+              "generatePathProperty": true
+            },
+            "zxcvbn-core": {
+              "target": "Package",
+              "version": "[7.0.92, )",
+              "generatePathProperty": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
+        },
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "FSharp.Core": {
+              "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[5.0.0, )",
+              "generatePathProperty": true
+            },
+            "HOG.TezFs": {
+              "target": "Package",
+              "version": "[1.0.2, )",
+              "generatePathProperty": true
+            },
+            "Konscious.Security.Cryptography.Argon2": {
+              "target": "Package",
+              "version": "[1.2.1, )",
+              "generatePathProperty": true
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )",
+              "autoReferenced": true
+            },
+            "ModifiedNetezos": {
+              "target": "Package",
+              "version": "[1.0.0, )",
               "generatePathProperty": true
             },
             "NETStandard.Library": {
@@ -171,7 +317,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
         }
       }
     }

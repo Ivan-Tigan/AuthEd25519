@@ -13,7 +13,9 @@
         <OutputType>Library</OutputType>
         <RootNamespace>AuthEd25519</RootNamespace>
         <AssemblyName>AuthEd25519</AssemblyName>
-        <TargetFrameworks>net472;net5.0;netstandard2.0</TargetFrameworks>
+        <TargetFrameworks>net472;net5.0;netcoreapp3.1;netstandard2.0</TargetFrameworks>
+        <PackageVersion>2.0.0</PackageVersion>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
 
     <ItemGroup>
@@ -21,8 +23,9 @@
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Chaos.NaCl.Standard" Version="1.0.0" />
+      <PackageReference Include="HOG.TezFs" Version="1.0.2" />
       <PackageReference Include="Konscious.Security.Cryptography.Argon2" Version="1.2.1" />
+      <PackageReference Include="ModifiedNetezos" Version="1.0.0" />
       <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
       <PackageReference Include="zxcvbn-core" Version="7.0.92" />
     </ItemGroup>

@@ -1,0 +1,8 @@
+/home/vankata/Documents/hog/AuthEd25519/AuthEd25519/bin/Debug/netcoreapp3.1/AuthEd25519.deps.json
+/home/vankata/Documents/hog/AuthEd25519/AuthEd25519/bin/Debug/netcoreapp3.1/AuthEd25519.dll
+/home/vankata/Documents/hog/AuthEd25519/AuthEd25519/bin/Debug/netcoreapp3.1/AuthEd25519.pdb
+/home/vankata/Documents/hog/AuthEd25519/AuthEd25519/obj/Debug/netcoreapp3.1/AuthEd25519.fsproj.AssemblyReference.cache
+/home/vankata/Documents/hog/AuthEd25519/AuthEd25519/obj/Debug/netcoreapp3.1/AuthEd25519.AssemblyInfoInputs.cache
+/home/vankata/Documents/hog/AuthEd25519/AuthEd25519/obj/Debug/netcoreapp3.1/AuthEd25519.AssemblyInfo.fs
+/home/vankata/Documents/hog/AuthEd25519/AuthEd25519/obj/Debug/netcoreapp3.1/AuthEd25519.dll
+/home/vankata/Documents/hog/AuthEd25519/AuthEd25519/obj/Debug/netcoreapp3.1/AuthEd25519.pdb
