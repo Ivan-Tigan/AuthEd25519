@@ -10,9 +10,9 @@ open System.Reflection
 [<assembly: System.Reflection.AssemblyCompanyAttribute("Higher Order Games")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Release")>]
 [<assembly: System.Reflection.AssemblyDescriptionAttribute(" Ultra-simple high-level library for using Ed25519 to manage accounts. ")>]
-[<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.7.0")>]
-[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.7")>]
+[<assembly: System.Reflection.AssemblyFileVersionAttribute("1.1.0.0")>]
+[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.1.0")>]
 [<assembly: System.Reflection.AssemblyProductAttribute("AuthEd25519")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("AuthEd25519")>]
-[<assembly: System.Reflection.AssemblyVersionAttribute("1.0.7.0")>]
+[<assembly: System.Reflection.AssemblyVersionAttribute("1.1.0.0")>]
 do()

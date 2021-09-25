@@ -14,17 +14,19 @@ open TezFs open Netezos open Netezos.Keys
 type PrivateKey = private PrivateKey of Key with
     member this.string = match this with PrivateKey p -> p.GetBase58()
     member this.bytes = match this with PrivateKey p -> p.GetBytes()
+    interface IComparable with override this.CompareTo other = match other with | :? PrivateKey as other -> this.string.CompareTo other.string | _ -> -1
 [<JsonObject(MemberSerialization = MemberSerialization.Fields)>]
 type PublicKey = private PublicKey of PubKey with
     member this.string = match this with PublicKey p -> p.GetBase58()
     member this.bytes = match this with PublicKey p -> p.GetBytes()
+    interface IComparable with override this.CompareTo other = match other with | :? PublicKey as other -> this.string.CompareTo other.string | _ -> -1
 [<JsonObject(MemberSerialization = MemberSerialization.Fields)>]
 type Signature = private Signature of Netezos.Keys.Signature with
     member this.string = match this with Signature p -> p.ToBase58()
     member this.bytes = match this with Signature p -> p.ToBytes()
-
-
+    interface IComparable with override this.CompareTo other = match other with | :? Signature as other -> this.string.CompareTo other.string | _ -> -1
 let spriv (s:string) = acc_base58 s
+let spub (s:string) = PublicKey <| PubKey.FromBase58 s
 
 let mk_sign ps (msg:string) =
     let sigs = ps |> List.map (fun  (PrivateKey p) ->
@@ -42,7 +44,7 @@ type Account = private {priv: PrivateKey;}
     member acc.pub = match acc.priv with PrivateKey p -> PublicKey p.PubKey
     member acc.pub_hash = match acc.priv with PrivateKey p -> p.PubKey.Address
     member acc.sign = mk_sign [acc.priv]
-let new_account () = random_account ()
+let new_account () = {priv = PrivateKey <| random_account ()}
 
 let argon2hash iterations memory_size degrees_of_parallelism size known_secret extra salt pass =
     let arg = new Argon2id(pass)
@@ -80,6 +82,7 @@ let shasherino known_secret (extra:string) (salt:string) (pass:string) =
     argon2hash its m d 32 known_secret salt extra pass
 let load_acc_from_details known_secret extra salt pass = shasherino known_secret extra salt pass |> Key.FromBytes |> fun k -> {priv = PrivateKey k}
 let memory_login name pass = load_acc_from_details "be5d9f66cf2ebed67f5a3c68ce69bd07a1ecad2b88db7cfaf5ac63aba8eaf6fe" "hog"
+let login_priv priv = {priv = PrivateKey <| Key.FromBase58 priv}
 let bench f =
     let t = Stopwatch.StartNew()
     let ret = f()

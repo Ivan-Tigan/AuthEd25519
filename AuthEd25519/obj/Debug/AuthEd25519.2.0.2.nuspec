@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>AuthEd25519</id>
+    <version>2.0.2</version>
+    <authors>Ivan Tsoninski</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <description>Ultra-simple high-level library for using Ed25519 to manage accounts.</description>
+    <dependencies>
+      <group targetFramework=".NETFramework4.7.2">
+        <dependency id="FSharp.Core" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="HOG.TezFs" version="1.0.2" exclude="Build,Analyzers" />
+        <dependency id="Konscious.Security.Cryptography.Argon2" version="1.2.1" exclude="Build,Analyzers" />
+        <dependency id="ModifiedNetezos" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.1" exclude="Build,Analyzers" />
+        <dependency id="zxcvbn-core" version="7.0.92" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="FSharp.Core" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="HOG.TezFs" version="1.0.2" exclude="Build,Analyzers" />
+        <dependency id="Konscious.Security.Cryptography.Argon2" version="1.2.1" exclude="Build,Analyzers" />
+        <dependency id="ModifiedNetezos" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.1" exclude="Build,Analyzers" />
+        <dependency id="zxcvbn-core" version="7.0.92" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net5.0">
+        <dependency id="FSharp.Core" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="HOG.TezFs" version="1.0.2" exclude="Build,Analyzers" />
+        <dependency id="Konscious.Security.Cryptography.Argon2" version="1.2.1" exclude="Build,Analyzers" />
+        <dependency id="ModifiedNetezos" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.1" exclude="Build,Analyzers" />
+        <dependency id="zxcvbn-core" version="7.0.92" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="FSharp.Core" version="5.0.0" exclude="Build,Analyzers" />
+        <dependency id="HOG.TezFs" version="1.0.2" exclude="Build,Analyzers" />
+        <dependency id="Konscious.Security.Cryptography.Argon2" version="1.2.1" exclude="Build,Analyzers" />
+        <dependency id="ModifiedNetezos" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.1" exclude="Build,Analyzers" />
+        <dependency id="zxcvbn-core" version="7.0.92" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.IO" targetFramework=".NETFramework4.7.2" />
+      <frameworkAssembly assemblyName="System.Net.Http" targetFramework=".NETFramework4.7.2" />
+      <frameworkAssembly assemblyName="System.Runtime" targetFramework=".NETFramework4.7.2" />
+      <frameworkAssembly assemblyName="System.Security.Cryptography.Algorithms" targetFramework=".NETFramework4.7.2" />
+      <frameworkAssembly assemblyName="System.Security.Cryptography.Encoding" targetFramework=".NETFramework4.7.2" />
+      <frameworkAssembly assemblyName="System.Security.Cryptography.Primitives" targetFramework=".NETFramework4.7.2" />
+      <frameworkAssembly assemblyName="System.Security.Cryptography.X509Certificates" targetFramework=".NETFramework4.7.2" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="/home/vankata/Documents/hog/AuthEd25519/AuthEd25519/bin/Debug/net472/AuthEd25519.dll" target="lib/net472/AuthEd25519.dll" />
+    <file src="/home/vankata/Documents/hog/AuthEd25519/AuthEd25519/bin/Debug/net5.0/AuthEd25519.dll" target="lib/net5.0/AuthEd25519.dll" />
+    <file src="/home/vankata/Documents/hog/AuthEd25519/AuthEd25519/bin/Debug/netcoreapp3.1/AuthEd25519.dll" target="lib/netcoreapp3.1/AuthEd25519.dll" />
+    <file src="/home/vankata/Documents/hog/AuthEd25519/AuthEd25519/bin/Debug/netstandard2.0/AuthEd25519.dll" target="lib/netstandard2.0/AuthEd25519.dll" />
+  </files>
+</package>
