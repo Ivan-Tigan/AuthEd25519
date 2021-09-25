@@ -22,6 +22,7 @@
     <PkgKonscious_Security_Cryptography_Argon2 Condition=" '$(PkgKonscious_Security_Cryptography_Argon2)' == '' ">/home/vankata/.nuget/packages/konscious.security.cryptography.argon2/1.2.1</PkgKonscious_Security_Cryptography_Argon2>
     <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/home/vankata/.nuget/packages/fsharp.core/5.0.0</PkgFSharp_Core>
     <PkgHOG_TezFs Condition=" '$(PkgHOG_TezFs)' == '' ">/home/vankata/.nuget/packages/hog.tezfs/1.0.2</PkgHOG_TezFs>
+    <PkgFsPickler Condition=" '$(PkgFsPickler)' == '' ">/home/vankata/.nuget/packages/fspickler/5.3.0</PkgFsPickler>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' AND '$(ExcludeRestorePackageImports)' != 'true' ">
     <Pkgzxcvbn-core Condition=" '$(Pkgzxcvbn-core)' == '' ">/home/vankata/.nuget/packages/zxcvbn-core/7.0.92</Pkgzxcvbn-core>
@@ -31,5 +32,6 @@
     <PkgKonscious_Security_Cryptography_Argon2 Condition=" '$(PkgKonscious_Security_Cryptography_Argon2)' == '' ">/home/vankata/.nuget/packages/konscious.security.cryptography.argon2/1.2.1</PkgKonscious_Security_Cryptography_Argon2>
     <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/home/vankata/.nuget/packages/fsharp.core/5.0.0</PkgFSharp_Core>
     <PkgHOG_TezFs Condition=" '$(PkgHOG_TezFs)' == '' ">/home/vankata/.nuget/packages/hog.tezfs/1.0.2</PkgHOG_TezFs>
+    <PkgFsPickler Condition=" '$(PkgFsPickler)' == '' ">/home/vankata/.nuget/packages/fspickler/5.3.0</PkgFsPickler>
   </PropertyGroup>
 </Project>

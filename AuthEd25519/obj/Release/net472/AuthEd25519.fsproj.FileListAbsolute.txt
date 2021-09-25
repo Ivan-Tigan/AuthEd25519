@@ -65,3 +65,4 @@
 /home/vankata/Documents/hog/AuthEd25519/AuthEd25519/obj/Release/net472/AuthEd25519.fsproj.CopyComplete
 /home/vankata/Documents/hog/AuthEd25519/AuthEd25519/obj/Release/net472/AuthEd25519.dll
 /home/vankata/Documents/hog/AuthEd25519/AuthEd25519/obj/Release/net472/AuthEd25519.pdb
+/home/vankata/Documents/hog/AuthEd25519/AuthEd25519/bin/Release/net472/FsPickler.dll

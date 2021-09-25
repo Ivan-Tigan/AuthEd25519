@@ -6,25 +6,32 @@ open System.Diagnostics
 open System.Security.Cryptography
 open System.Text
 open Konscious.Security.Cryptography
+open MBrace.FsPickler
 open Newtonsoft.Json
 //module AuthEd25519 =
 open TezFs open Netezos open Netezos.Keys
 
+[<CustomPickler>]
 [<JsonObject(MemberSerialization = MemberSerialization.Fields)>]
 type PrivateKey = private PrivateKey of Key with
     member this.string = match this with PrivateKey p -> p.GetBase58()
     member this.bytes = match this with PrivateKey p -> p.GetBytes()
     interface IComparable with override this.CompareTo other = match other with | :? PrivateKey as other -> this.string.CompareTo other.string | _ -> -1
+    static member CreatePickler (resolver:IPicklerResolver) = let kp = resolver.Resolve<Key>() in Pickler.FromPrimitives((fun rs -> kp.Read rs "K" |> PrivateKey), (fun ws (PrivateKey k) -> kp.Write ws "K" k))
+[<CustomPickler>]
 [<JsonObject(MemberSerialization = MemberSerialization.Fields)>]
 type PublicKey = private PublicKey of PubKey with
     member this.string = match this with PublicKey p -> p.GetBase58()
     member this.bytes = match this with PublicKey p -> p.GetBytes()
     interface IComparable with override this.CompareTo other = match other with | :? PublicKey as other -> this.string.CompareTo other.string | _ -> -1
+    static member CreatePickler (resolver:IPicklerResolver) = let kp = resolver.Resolve<PubKey>() in Pickler.FromPrimitives((fun rs -> kp.Read rs "K" |> PublicKey), (fun ws (PublicKey k) -> kp.Write ws "K" k))
+[<CustomPickler>]
 [<JsonObject(MemberSerialization = MemberSerialization.Fields)>]
 type Signature = private Signature of Netezos.Keys.Signature with
     member this.string = match this with Signature p -> p.ToBase58()
     member this.bytes = match this with Signature p -> p.ToBytes()
     interface IComparable with override this.CompareTo other = match other with | :? Signature as other -> this.string.CompareTo other.string | _ -> -1
+    static member CreatePickler (resolver:IPicklerResolver) = let kp = resolver.Resolve<Netezos.Keys.Signature>() in Pickler.FromPrimitives((fun rs -> kp.Read rs "K" |> Signature), (fun ws (Signature k) -> kp.Write ws "K" k))
 let spriv (s:string) = acc_base58 s
 let spub (s:string) = PublicKey <| PubKey.FromBase58 s
 
@@ -44,6 +51,8 @@ type Account = private {priv: PrivateKey;}
     member acc.pub = match acc.priv with PrivateKey p -> PublicKey p.PubKey
     member acc.pub_hash = match acc.priv with PrivateKey p -> p.PubKey.Address
     member acc.sign = mk_sign [acc.priv]
+    member acc.tezos = match acc.priv with PrivateKey p -> p
+    static member CreatePickler (resolver:IPicklerResolver) = let kp = resolver.Resolve<PrivateKey>() in Pickler.FromPrimitives((fun rs -> { priv = kp.Read rs "K" }), (fun ws ({priv = k}) -> kp.Write ws "K" k))
 let new_account () = {priv = PrivateKey <| random_account ()}
 
 let argon2hash iterations memory_size degrees_of_parallelism size known_secret extra salt pass =
