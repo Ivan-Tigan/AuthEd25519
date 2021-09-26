@@ -20,7 +20,8 @@ type PrivateKey = private PrivateKey of Key with
     interface IComparable with override this.CompareTo other = match other with | :? PrivateKey as other -> this.string.CompareTo other.string | _ -> -1
     static member CreatePickler (resolver:IPicklerResolver) =
         let kp = resolver.Resolve<string>() in Pickler.FromPrimitives((fun rs -> kp.Read rs "K" |> Netezos.Keys.Key.FromBase58 |> PrivateKey), (fun ws (PrivateKey k) -> kp.Write ws "K" <| k.GetBase58()))
-    override this.Equals other = match other with | :? PrivateKey as other -> this.string = other.string | _ -> false 
+    override this.Equals other = match other with | :? PrivateKey as other -> this.string = other.string | _ -> false
+    override this.GetHashCode() = hash this.string
 [<CustomPickler>]
 [<CustomEquality>][<CustomComparison>]
 [<JsonObject(MemberSerialization = MemberSerialization.Fields)>]
@@ -30,6 +31,7 @@ type PublicKey = private PublicKey of PubKey with
     interface IComparable with override this.CompareTo other = match other with | :? PublicKey as other -> this.string.CompareTo other.string | _ -> -1
     static member CreatePickler (resolver:IPicklerResolver) = let kp = resolver.Resolve<string>() in Pickler.FromPrimitives((fun rs -> kp.Read rs "K" |> PubKey.FromBase58 |> PublicKey), (fun ws (PublicKey k) -> kp.Write ws "K" <| k.GetBase58()))
     override this.Equals other = match other with | :? PublicKey as other -> this.string = other.string | _ -> false 
+    override this.GetHashCode() = hash this.string
 [<JsonObject(MemberSerialization = MemberSerialization.Fields)>]
 [<CustomPickler>]
 [<CustomEquality>][<CustomComparison>]
@@ -41,6 +43,7 @@ type Signature = private Signature of Netezos.Keys.Signature with
         let kp = resolver.Resolve<byte[]>() in
         Pickler.FromPrimitives(( fun rs -> let pre = kp.Read rs "P" in let bs = kp.Read rs "B" in Netezos.Keys.Signature(bs, pre) |> Signature), (fun ws (Signature k) -> let _ = kp.Write ws "P" k.Prefix in kp.Write ws "B" k.Bytes ))
     override this.Equals other = match other with | :? Signature as other -> this.string = other.string | _ -> false 
+    override this.GetHashCode() = hash this.string
 let spriv (s:string) = acc_base58 s
 let spub (s:string) = PublicKey <| PubKey.FromBase58 s
 

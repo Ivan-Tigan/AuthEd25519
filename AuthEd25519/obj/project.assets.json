@@ -4942,7 +4942,7 @@
     "/home/vankata/.nuget/packages/": {}
   },
   "project": {
-    "version": "2.1.3",
+    "version": "2.1.4",
     "restore": {
       "projectUniqueName": "/home/vankata/Documents/hog/AuthEd25519/AuthEd25519/AuthEd25519.fsproj",
       "projectName": "AuthEd25519",
