@@ -59,10 +59,12 @@
 /home/vankata/Documents/hog/AuthEd25519/AuthEd25519/bin/Release/net472/tr/FSharp.Core.resources.dll
 /home/vankata/Documents/hog/AuthEd25519/AuthEd25519/bin/Release/net472/zh-Hans/FSharp.Core.resources.dll
 /home/vankata/Documents/hog/AuthEd25519/AuthEd25519/bin/Release/net472/zh-Hant/FSharp.Core.resources.dll
-/home/vankata/Documents/hog/AuthEd25519/AuthEd25519/obj/Release/net472/AuthEd25519.fsproj.AssemblyReference.cache
 /home/vankata/Documents/hog/AuthEd25519/AuthEd25519/obj/Release/net472/AuthEd25519.AssemblyInfoInputs.cache
 /home/vankata/Documents/hog/AuthEd25519/AuthEd25519/obj/Release/net472/AuthEd25519.AssemblyInfo.fs
 /home/vankata/Documents/hog/AuthEd25519/AuthEd25519/obj/Release/net472/AuthEd25519.fsproj.CopyComplete
 /home/vankata/Documents/hog/AuthEd25519/AuthEd25519/obj/Release/net472/AuthEd25519.dll
 /home/vankata/Documents/hog/AuthEd25519/AuthEd25519/obj/Release/net472/AuthEd25519.pdb
 /home/vankata/Documents/hog/AuthEd25519/AuthEd25519/bin/Release/net472/FsPickler.dll
+/home/vankata/Documents/hog/AuthEd25519/AuthEd25519/bin/Release/net472/FSharp.Core.resources.dll
+/home/vankata/Documents/hog/AuthEd25519/AuthEd25519/bin/Release/net472/en/FSharp.Core.resources.dll
+/home/vankata/Documents/hog/AuthEd25519/AuthEd25519/obj/Release/net472/AuthEd25519.fsprojAssemblyReference.cache

@@ -14,52 +14,57 @@
           "lib/netstandard2.0/Dynamic.Json.dll": {}
         }
       },
-      "FSharp.Core/5.0.0": {
+      "FSharp.Core/4.5.2": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/FSharp.Core.dll": {}
+          "lib/net45/FSharp.Core.dll": {},
+          "lib/net45/FSharp.Core.resources.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/FSharp.Core.dll": {}
+          "lib/net45/FSharp.Core.dll": {},
+          "lib/net45/FSharp.Core.resources.dll": {}
         },
         "resource": {
-          "lib/netstandard2.0/cs/FSharp.Core.resources.dll": {
+          "lib/net45/cs/FSharp.Core.resources.dll": {
             "locale": "cs"
           },
-          "lib/netstandard2.0/de/FSharp.Core.resources.dll": {
+          "lib/net45/de/FSharp.Core.resources.dll": {
             "locale": "de"
           },
-          "lib/netstandard2.0/es/FSharp.Core.resources.dll": {
+          "lib/net45/en/FSharp.Core.resources.dll": {
+            "locale": "en"
+          },
+          "lib/net45/es/FSharp.Core.resources.dll": {
             "locale": "es"
           },
-          "lib/netstandard2.0/fr/FSharp.Core.resources.dll": {
+          "lib/net45/fr/FSharp.Core.resources.dll": {
             "locale": "fr"
           },
-          "lib/netstandard2.0/it/FSharp.Core.resources.dll": {
+          "lib/net45/it/FSharp.Core.resources.dll": {
             "locale": "it"
           },
-          "lib/netstandard2.0/ja/FSharp.Core.resources.dll": {
+          "lib/net45/ja/FSharp.Core.resources.dll": {
             "locale": "ja"
           },
-          "lib/netstandard2.0/ko/FSharp.Core.resources.dll": {
+          "lib/net45/ko/FSharp.Core.resources.dll": {
             "locale": "ko"
           },
-          "lib/netstandard2.0/pl/FSharp.Core.resources.dll": {
+          "lib/net45/pl/FSharp.Core.resources.dll": {
             "locale": "pl"
           },
-          "lib/netstandard2.0/pt-BR/FSharp.Core.resources.dll": {
+          "lib/net45/pt-BR/FSharp.Core.resources.dll": {
             "locale": "pt-BR"
           },
-          "lib/netstandard2.0/ru/FSharp.Core.resources.dll": {
+          "lib/net45/ru/FSharp.Core.resources.dll": {
             "locale": "ru"
           },
-          "lib/netstandard2.0/tr/FSharp.Core.resources.dll": {
+          "lib/net45/tr/FSharp.Core.resources.dll": {
             "locale": "tr"
           },
-          "lib/netstandard2.0/zh-Hans/FSharp.Core.resources.dll": {
+          "lib/net45/zh-Hans/FSharp.Core.resources.dll": {
             "locale": "zh-Hans"
           },
-          "lib/netstandard2.0/zh-Hant/FSharp.Core.resources.dll": {
+          "lib/net45/zh-Hant/FSharp.Core.resources.dll": {
             "locale": "zh-Hant"
           }
         }
@@ -506,52 +511,55 @@
           "lib/netstandard2.0/Dynamic.Json.dll": {}
         }
       },
-      "FSharp.Core/5.0.0": {
+      "FSharp.Core/4.5.2": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/FSharp.Core.dll": {}
+          "lib/netstandard1.6/FSharp.Core.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/FSharp.Core.dll": {}
+          "lib/netstandard1.6/FSharp.Core.dll": {}
         },
         "resource": {
-          "lib/netstandard2.0/cs/FSharp.Core.resources.dll": {
+          "lib/netstandard1.6/cs/FSharp.Core.resources.dll": {
             "locale": "cs"
           },
-          "lib/netstandard2.0/de/FSharp.Core.resources.dll": {
+          "lib/netstandard1.6/de/FSharp.Core.resources.dll": {
             "locale": "de"
           },
-          "lib/netstandard2.0/es/FSharp.Core.resources.dll": {
+          "lib/netstandard1.6/en/FSharp.Core.resources.dll": {
+            "locale": "en"
+          },
+          "lib/netstandard1.6/es/FSharp.Core.resources.dll": {
             "locale": "es"
           },
-          "lib/netstandard2.0/fr/FSharp.Core.resources.dll": {
+          "lib/netstandard1.6/fr/FSharp.Core.resources.dll": {
             "locale": "fr"
           },
-          "lib/netstandard2.0/it/FSharp.Core.resources.dll": {
+          "lib/netstandard1.6/it/FSharp.Core.resources.dll": {
             "locale": "it"
           },
-          "lib/netstandard2.0/ja/FSharp.Core.resources.dll": {
+          "lib/netstandard1.6/ja/FSharp.Core.resources.dll": {
             "locale": "ja"
           },
-          "lib/netstandard2.0/ko/FSharp.Core.resources.dll": {
+          "lib/netstandard1.6/ko/FSharp.Core.resources.dll": {
             "locale": "ko"
           },
-          "lib/netstandard2.0/pl/FSharp.Core.resources.dll": {
+          "lib/netstandard1.6/pl/FSharp.Core.resources.dll": {
             "locale": "pl"
           },
-          "lib/netstandard2.0/pt-BR/FSharp.Core.resources.dll": {
+          "lib/netstandard1.6/pt-BR/FSharp.Core.resources.dll": {
             "locale": "pt-BR"
           },
-          "lib/netstandard2.0/ru/FSharp.Core.resources.dll": {
+          "lib/netstandard1.6/ru/FSharp.Core.resources.dll": {
             "locale": "ru"
           },
-          "lib/netstandard2.0/tr/FSharp.Core.resources.dll": {
+          "lib/netstandard1.6/tr/FSharp.Core.resources.dll": {
             "locale": "tr"
           },
-          "lib/netstandard2.0/zh-Hans/FSharp.Core.resources.dll": {
+          "lib/netstandard1.6/zh-Hans/FSharp.Core.resources.dll": {
             "locale": "zh-Hans"
           },
-          "lib/netstandard2.0/zh-Hant/FSharp.Core.resources.dll": {
+          "lib/netstandard1.6/zh-Hant/FSharp.Core.resources.dll": {
             "locale": "zh-Hant"
           }
         }
@@ -1601,31 +1609,52 @@
         "lib/netstandard2.0/Dynamic.Json.dll"
       ]
     },
-    "FSharp.Core/5.0.0": {
-      "sha512": "iHoYXA0VaSQUONGENB1aVafjDDZDZpwu39MtaRCTrmwFW/cTcK0b2yKNVYneFHJMc3ChtsSoM9lNtJ1dYXkHfA==",
+    "FSharp.Core/4.5.2": {
+      "sha512": "apbdQOjzsjQ637kTWQuW29jqwY18jsHMyNC5A+TPJZKFEIE2cIfQWf3V7+mXrxlbX69BueYkv293/g70wuXuRw==",
       "type": "package",
-      "path": "fsharp.core/5.0.0",
+      "path": "fsharp.core/4.5.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "Icon.png",
-        "fsharp.core.5.0.0.nupkg.sha512",
+        "fsharp.core.4.5.2.nupkg.sha512",
         "fsharp.core.nuspec",
-        "lib/netstandard2.0/FSharp.Core.dll",
-        "lib/netstandard2.0/FSharp.Core.xml",
-        "lib/netstandard2.0/cs/FSharp.Core.resources.dll",
-        "lib/netstandard2.0/de/FSharp.Core.resources.dll",
-        "lib/netstandard2.0/es/FSharp.Core.resources.dll",
-        "lib/netstandard2.0/fr/FSharp.Core.resources.dll",
-        "lib/netstandard2.0/it/FSharp.Core.resources.dll",
-        "lib/netstandard2.0/ja/FSharp.Core.resources.dll",
-        "lib/netstandard2.0/ko/FSharp.Core.resources.dll",
-        "lib/netstandard2.0/pl/FSharp.Core.resources.dll",
-        "lib/netstandard2.0/pt-BR/FSharp.Core.resources.dll",
-        "lib/netstandard2.0/ru/FSharp.Core.resources.dll",
-        "lib/netstandard2.0/tr/FSharp.Core.resources.dll",
-        "lib/netstandard2.0/zh-Hans/FSharp.Core.resources.dll",
-        "lib/netstandard2.0/zh-Hant/FSharp.Core.resources.dll"
+        "lib/net45/FSharp.Core.dll",
+        "lib/net45/FSharp.Core.optdata",
+        "lib/net45/FSharp.Core.resources.dll",
+        "lib/net45/FSharp.Core.sigdata",
+        "lib/net45/FSharp.Core.xml",
+        "lib/net45/cs/FSharp.Core.resources.dll",
+        "lib/net45/de/FSharp.Core.resources.dll",
+        "lib/net45/en/FSharp.Core.resources.dll",
+        "lib/net45/es/FSharp.Core.resources.dll",
+        "lib/net45/fr/FSharp.Core.resources.dll",
+        "lib/net45/it/FSharp.Core.resources.dll",
+        "lib/net45/ja/FSharp.Core.resources.dll",
+        "lib/net45/ko/FSharp.Core.resources.dll",
+        "lib/net45/pl/FSharp.Core.resources.dll",
+        "lib/net45/pt-BR/FSharp.Core.resources.dll",
+        "lib/net45/ru/FSharp.Core.resources.dll",
+        "lib/net45/tr/FSharp.Core.resources.dll",
+        "lib/net45/zh-Hans/FSharp.Core.resources.dll",
+        "lib/net45/zh-Hant/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/FSharp.Core.dll",
+        "lib/netstandard1.6/FSharp.Core.optdata",
+        "lib/netstandard1.6/FSharp.Core.sigdata",
+        "lib/netstandard1.6/FSharp.Core.xml",
+        "lib/netstandard1.6/cs/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/de/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/en/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/es/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/fr/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/it/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/ja/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/ko/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/pl/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/pt-BR/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/ru/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/tr/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/zh-Hans/FSharp.Core.resources.dll",
+        "lib/netstandard1.6/zh-Hant/FSharp.Core.resources.dll"
       ]
     },
     "FsPickler/5.3.0": {
@@ -4888,7 +4917,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.7.2": [
-      "FSharp.Core >= 5.0.0",
+      "FSharp.Core >= 4.5.2",
       "FsPickler >= 5.3.0",
       "HOG.TezFs >= 1.0.6",
       "Konscious.Security.Cryptography.Argon2 >= 1.2.1",
@@ -4898,7 +4927,7 @@
       "zxcvbn-core >= 7.0.92"
     ],
     ".NETStandard,Version=v2.0": [
-      "FSharp.Core >= 5.0.0",
+      "FSharp.Core >= 4.5.2",
       "FsPickler >= 5.3.0",
       "HOG.TezFs >= 1.0.6",
       "Konscious.Security.Cryptography.Argon2 >= 1.2.1",
@@ -4913,7 +4942,7 @@
     "/home/vankata/.nuget/packages/": {}
   },
   "project": {
-    "version": "2.1.1",
+    "version": "2.1.2",
     "restore": {
       "projectUniqueName": "/home/vankata/Documents/hog/AuthEd25519/AuthEd25519/AuthEd25519.fsproj",
       "projectName": "AuthEd25519",
@@ -4948,25 +4977,20 @@
         "targetAlias": "net472",
         "dependencies": {
           "FSharp.Core": {
-            "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
             "target": "Package",
-            "version": "[5.0.0, )",
-            "generatePathProperty": true
+            "version": "[4.5.2, )"
           },
           "FsPickler": {
             "target": "Package",
-            "version": "[5.3.0, )",
-            "generatePathProperty": true
+            "version": "[5.3.0, )"
           },
           "HOG.TezFs": {
             "target": "Package",
-            "version": "[1.0.6, )",
-            "generatePathProperty": true
+            "version": "[1.0.6, )"
           },
           "Konscious.Security.Cryptography.Argon2": {
             "target": "Package",
-            "version": "[1.2.1, )",
-            "generatePathProperty": true
+            "version": "[1.2.1, )"
           },
           "Microsoft.NETFramework.ReferenceAssemblies": {
             "suppressParent": "All",
@@ -4976,45 +5000,37 @@
           },
           "ModifiedNetezos": {
             "target": "Package",
-            "version": "[1.0.6, )",
-            "generatePathProperty": true
+            "version": "[1.0.6, )"
           },
           "Newtonsoft.Json": {
             "target": "Package",
-            "version": "[13.0.1, )",
-            "generatePathProperty": true
+            "version": "[13.0.1, )"
           },
           "zxcvbn-core": {
             "target": "Package",
-            "version": "[7.0.92, )",
-            "generatePathProperty": true
+            "version": "[7.0.92, )"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/mono/msbuild/Current/bin/RuntimeIdentifierGraph.json"
       },
       "netstandard2.0": {
         "targetAlias": "netstandard2.0",
         "dependencies": {
           "FSharp.Core": {
-            "include": "Runtime, Compile, Build, Native, Analyzers, BuildTransitive",
             "target": "Package",
-            "version": "[5.0.0, )",
-            "generatePathProperty": true
+            "version": "[4.5.2, )"
           },
           "FsPickler": {
             "target": "Package",
-            "version": "[5.3.0, )",
-            "generatePathProperty": true
+            "version": "[5.3.0, )"
           },
           "HOG.TezFs": {
             "target": "Package",
-            "version": "[1.0.6, )",
-            "generatePathProperty": true
+            "version": "[1.0.6, )"
           },
           "Konscious.Security.Cryptography.Argon2": {
             "target": "Package",
-            "version": "[1.2.1, )",
-            "generatePathProperty": true
+            "version": "[1.2.1, )"
           },
           "Microsoft.NETFramework.ReferenceAssemblies": {
             "suppressParent": "All",
@@ -5024,25 +5040,21 @@
           },
           "ModifiedNetezos": {
             "target": "Package",
-            "version": "[1.0.6, )",
-            "generatePathProperty": true
+            "version": "[1.0.6, )"
           },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
             "version": "[2.0.3, )",
-            "autoReferenced": true,
-            "generatePathProperty": true
+            "autoReferenced": true
           },
           "Newtonsoft.Json": {
             "target": "Package",
-            "version": "[13.0.1, )",
-            "generatePathProperty": true
+            "version": "[13.0.1, )"
           },
           "zxcvbn-core": {
             "target": "Package",
-            "version": "[7.0.92, )",
-            "generatePathProperty": true
+            "version": "[7.0.92, )"
           }
         },
         "imports": [
@@ -5055,8 +5067,21 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/mono/msbuild/Current/bin/RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: FSharp.Core from 5.0.0 to 4.5.2. Reference the package directly from the project to select a different version. \n AuthEd25519 -> HOG.TezFs 1.0.6 -> FSharp.Core (>= 5.0.0) \n AuthEd25519 -> FSharp.Core (>= 4.5.2)",
+      "libraryId": "FSharp.Core",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2",
+        ".NETStandard,Version=v2.0"
+      ]
+    }
+  ]
 }

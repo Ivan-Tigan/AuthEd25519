@@ -17,21 +17,24 @@ type PrivateKey = private PrivateKey of Key with
     member this.string = match this with PrivateKey p -> p.GetBase58()
     member this.bytes = match this with PrivateKey p -> p.GetBytes()
     interface IComparable with override this.CompareTo other = match other with | :? PrivateKey as other -> this.string.CompareTo other.string | _ -> -1
-    static member CreatePickler (resolver:IPicklerResolver) = let kp = resolver.Resolve<Key>() in Pickler.FromPrimitives((fun rs -> kp.Read rs "K" |> PrivateKey), (fun ws (PrivateKey k) -> kp.Write ws "K" k))
+    static member CreatePickler (resolver:IPicklerResolver) =
+        let kp = resolver.Resolve<string>() in Pickler.FromPrimitives((fun rs -> kp.Read rs "K" |> Netezos.Keys.Key.FromBase58 |> PrivateKey), (fun ws (PrivateKey k) -> kp.Write ws "K" <| k.GetBase58()))
 [<CustomPickler>]
 [<JsonObject(MemberSerialization = MemberSerialization.Fields)>]
 type PublicKey = private PublicKey of PubKey with
     member this.string = match this with PublicKey p -> p.GetBase58()
     member this.bytes = match this with PublicKey p -> p.GetBytes()
     interface IComparable with override this.CompareTo other = match other with | :? PublicKey as other -> this.string.CompareTo other.string | _ -> -1
-    static member CreatePickler (resolver:IPicklerResolver) = let kp = resolver.Resolve<PubKey>() in Pickler.FromPrimitives((fun rs -> kp.Read rs "K" |> PublicKey), (fun ws (PublicKey k) -> kp.Write ws "K" k))
-[<CustomPickler>]
+    static member CreatePickler (resolver:IPicklerResolver) = let kp = resolver.Resolve<string>() in Pickler.FromPrimitives((fun rs -> kp.Read rs "K" |> PubKey.FromBase58 |> PublicKey), (fun ws (PublicKey k) -> kp.Write ws "K" <| k.GetBase58()))
 [<JsonObject(MemberSerialization = MemberSerialization.Fields)>]
+[<CustomPickler>]
 type Signature = private Signature of Netezos.Keys.Signature with
     member this.string = match this with Signature p -> p.ToBase58()
     member this.bytes = match this with Signature p -> p.ToBytes()
     interface IComparable with override this.CompareTo other = match other with | :? Signature as other -> this.string.CompareTo other.string | _ -> -1
-    static member CreatePickler (resolver:IPicklerResolver) = let kp = resolver.Resolve<Netezos.Keys.Signature>() in Pickler.FromPrimitives((fun rs -> kp.Read rs "K" |> Signature), (fun ws (Signature k) -> kp.Write ws "K" k))
+    static member CreatePickler (resolver:IPicklerResolver) =
+        let kp = resolver.Resolve<byte[]>() in
+        Pickler.FromPrimitives(( fun rs -> let pre = kp.Read rs "P" in let bs = kp.Read rs "B" in Netezos.Keys.Signature(bs, pre) |> Signature), (fun ws (Signature k) -> let _ = kp.Write ws "P" k.Prefix in kp.Write ws "B" k.Bytes ))
 let spriv (s:string) = acc_base58 s
 let spub (s:string) = PublicKey <| PubKey.FromBase58 s
 
