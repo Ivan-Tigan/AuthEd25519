@@ -45,6 +45,7 @@ let mk_verifier (ps:PublicKey list) (msg:string, signatures) =
     then Ok msg
     else Error <| sprintf "Signature Verification Failed: pubs: %A; msg: %s;" ps msg
 let combine_signatures (t, ss) (t2, ss2) = if t = t2 then t, List.append ss ss2 else t, ss
+[<CustomPickler>]
 [<JsonObject(MemberSerialization = MemberSerialization.Fields)>]
 type Account = private {priv: PrivateKey;}
     with

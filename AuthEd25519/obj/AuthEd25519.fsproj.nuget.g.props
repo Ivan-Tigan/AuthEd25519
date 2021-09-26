@@ -18,20 +18,20 @@
   <PropertyGroup Condition=" '$(TargetFramework)' == 'net472' AND '$(ExcludeRestorePackageImports)' != 'true' ">
     <Pkgzxcvbn-core Condition=" '$(Pkgzxcvbn-core)' == '' ">/home/vankata/.nuget/packages/zxcvbn-core/7.0.92</Pkgzxcvbn-core>
     <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">/home/vankata/.nuget/packages/newtonsoft.json/13.0.1</PkgNewtonsoft_Json>
-    <PkgModifiedNetezos Condition=" '$(PkgModifiedNetezos)' == '' ">/home/vankata/.nuget/packages/modifiednetezos/1.0.0</PkgModifiedNetezos>
+    <PkgModifiedNetezos Condition=" '$(PkgModifiedNetezos)' == '' ">/home/vankata/.nuget/packages/modifiednetezos/1.0.5</PkgModifiedNetezos>
     <PkgKonscious_Security_Cryptography_Argon2 Condition=" '$(PkgKonscious_Security_Cryptography_Argon2)' == '' ">/home/vankata/.nuget/packages/konscious.security.cryptography.argon2/1.2.1</PkgKonscious_Security_Cryptography_Argon2>
     <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/home/vankata/.nuget/packages/fsharp.core/5.0.0</PkgFSharp_Core>
-    <PkgHOG_TezFs Condition=" '$(PkgHOG_TezFs)' == '' ">/home/vankata/.nuget/packages/hog.tezfs/1.0.2</PkgHOG_TezFs>
+    <PkgHOG_TezFs Condition=" '$(PkgHOG_TezFs)' == '' ">/home/vankata/.nuget/packages/hog.tezfs/1.0.5</PkgHOG_TezFs>
     <PkgFsPickler Condition=" '$(PkgFsPickler)' == '' ">/home/vankata/.nuget/packages/fspickler/5.3.0</PkgFsPickler>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.0' AND '$(ExcludeRestorePackageImports)' != 'true' ">
     <Pkgzxcvbn-core Condition=" '$(Pkgzxcvbn-core)' == '' ">/home/vankata/.nuget/packages/zxcvbn-core/7.0.92</Pkgzxcvbn-core>
     <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">/home/vankata/.nuget/packages/newtonsoft.json/13.0.1</PkgNewtonsoft_Json>
     <PkgNETStandard_Library Condition=" '$(PkgNETStandard_Library)' == '' ">/home/vankata/.nuget/packages/netstandard.library/2.0.3</PkgNETStandard_Library>
-    <PkgModifiedNetezos Condition=" '$(PkgModifiedNetezos)' == '' ">/home/vankata/.nuget/packages/modifiednetezos/1.0.0</PkgModifiedNetezos>
+    <PkgModifiedNetezos Condition=" '$(PkgModifiedNetezos)' == '' ">/home/vankata/.nuget/packages/modifiednetezos/1.0.5</PkgModifiedNetezos>
     <PkgKonscious_Security_Cryptography_Argon2 Condition=" '$(PkgKonscious_Security_Cryptography_Argon2)' == '' ">/home/vankata/.nuget/packages/konscious.security.cryptography.argon2/1.2.1</PkgKonscious_Security_Cryptography_Argon2>
     <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/home/vankata/.nuget/packages/fsharp.core/5.0.0</PkgFSharp_Core>
-    <PkgHOG_TezFs Condition=" '$(PkgHOG_TezFs)' == '' ">/home/vankata/.nuget/packages/hog.tezfs/1.0.2</PkgHOG_TezFs>
+    <PkgHOG_TezFs Condition=" '$(PkgHOG_TezFs)' == '' ">/home/vankata/.nuget/packages/hog.tezfs/1.0.5</PkgHOG_TezFs>
     <PkgFsPickler Condition=" '$(PkgFsPickler)' == '' ">/home/vankata/.nuget/packages/fspickler/5.3.0</PkgFsPickler>
   </PropertyGroup>
 </Project>
