@@ -5,7 +5,7 @@
   },
   "projects": {
     "/home/vankata/Documents/hog/AuthEd25519/AuthEd25519/AuthEd25519.fsproj": {
-      "version": "2.1.0",
+      "version": "2.1.1",
       "restore": {
         "projectUniqueName": "/home/vankata/Documents/hog/AuthEd25519/AuthEd25519/AuthEd25519.fsproj",
         "projectName": "AuthEd25519",
@@ -52,7 +52,7 @@
             },
             "HOG.TezFs": {
               "target": "Package",
-              "version": "[1.0.5, )",
+              "version": "[1.0.6, )",
               "generatePathProperty": true
             },
             "Konscious.Security.Cryptography.Argon2": {
@@ -68,7 +68,7 @@
             },
             "ModifiedNetezos": {
               "target": "Package",
-              "version": "[1.0.5, )",
+              "version": "[1.0.6, )",
               "generatePathProperty": true
             },
             "Newtonsoft.Json": {
@@ -100,7 +100,7 @@
             },
             "HOG.TezFs": {
               "target": "Package",
-              "version": "[1.0.5, )",
+              "version": "[1.0.6, )",
               "generatePathProperty": true
             },
             "Konscious.Security.Cryptography.Argon2": {
@@ -122,7 +122,7 @@
             },
             "ModifiedNetezos": {
               "target": "Package",
-              "version": "[1.0.5, )",
+              "version": "[1.0.6, )",
               "generatePathProperty": true
             },
             "NETStandard.Library": {
