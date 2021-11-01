@@ -103,7 +103,7 @@ let shasherino known_secret (extra:string) (salt:string) (pass:string) =
     let d = int32 <| def_degree_of_parallelism
     argon2hash its m d 32 known_secret salt extra pass
 let load_acc_from_details known_secret extra salt pass = shasherino known_secret extra salt pass |> Key.FromBytes |> fun k -> {priv = PrivateKey k}
-let memory_login name pass = load_acc_from_details "be5d9f66cf2ebed67f5a3c68ce69bd07a1ecad2b88db7cfaf5ac63aba8eaf6fe" "hog"
+let memory_login name pass = load_acc_from_details "be5d9f66cf2ebed67f5a3c68ce69bd07a1ecad2b88db7cfaf5ac63aba8eaf6fe" "hog" name pass
 let login_priv priv = {priv = PrivateKey <| Key.FromBase58 priv}
 let bench f =
     let t = Stopwatch.StartNew()

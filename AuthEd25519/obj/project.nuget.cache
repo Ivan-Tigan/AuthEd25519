@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "li0abF4je02XWsodpNTUo4glgdGa0rVDZP7IwqAlBee0w0H7lgnmoqw0oxMKf97fQV4yiYna8ec+iR7F9U57TQ==",
+  "dgSpecHash": "e7Lcu7ZqyZhM0CtE5Lzuj08TOldI+AZUG6nUwoCiWmVIqndbVVpjOauOAsyWpxk7KKfBpkApll37C2rMOXjq5Q==",
   "success": true,
   "projectFilePath": "/home/vankata/Documents/hog/AuthEd25519/AuthEd25519/AuthEd25519.fsproj",
   "expectedPackageFiles": [
